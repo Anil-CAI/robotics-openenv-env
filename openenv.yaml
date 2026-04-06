@@ -1,0 +1,23 @@
+name: robotics_env
+description: Grid-based robot navigation environment for obstacle avoidance and goal reaching
+
+actions:
+  action:
+    type: string
+    enum: ["up", "down", "left", "right"]
+
+observations:
+  position: [int, int]
+  goal: [int, int]
+  obstacles: list
+  grid_size: int
+  reward: float
+  done: bool
+
+tasks:
+  - name: easy
+    description: Reach goal without obstacles
+  - name: medium
+    description: Reach goal with obstacles
+  - name: hard
+    description: Reach goal with dense obstacles and penalties
