@@ -1,3 +1,12 @@
+---
+title: Robotics OpenEnv
+emoji: 🤖
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+---
+
 # Robotics Navigation Environment (OpenEnv)
 
 ## Overview
