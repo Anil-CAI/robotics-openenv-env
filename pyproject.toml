@@ -1,0 +1,19 @@
+[project]
+name = "robotics-openenv"
+version = "0.1.0"
+description = "Robotics Navigation OpenEnv Environment"
+authors = [{name = "Abito"}]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "requests",
+    "openenv"
+]
+
+[project.scripts]
+server = "server.app:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
