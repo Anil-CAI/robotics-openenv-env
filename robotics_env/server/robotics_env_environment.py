@@ -210,4 +210,3 @@ class RoboticsEnvironment:
         for row in grid:
             print(" ".join(row))
         print()
-
